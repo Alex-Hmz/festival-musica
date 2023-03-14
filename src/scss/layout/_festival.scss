@@ -3,15 +3,19 @@
 
 .sobre-festival{
     padding: 5rem 0rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5rem;
+    @include m.tablet {
+       @include m.grid(2, 5rem);
+    }
 }
 
 .contenido-festival{
     display: flex;              //Aliniamos verticalmente el contenido
     flex-direction: column;     //de forma virtical
     justify-content: center;
+    margin-top: 5rem;
+    @include m.tablet {
+        margin-top: 0;
+    }
 
     h2{
         margin-bottom: 2rem;

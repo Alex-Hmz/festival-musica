@@ -37,7 +37,11 @@
 </div>
 <section class="contenedor sobre-festival">
     <div class="imagen">
-        <img src="img/imagen_vocalista.jpg" alt="Imagen Vocalista Festival">
+        <picture>
+            <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+            <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+            <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen cantante">
+        </picture>
     </div>
     <div class="contenido-festival">
         <h2>Rock & EDM Festival</h2>
@@ -46,5 +50,117 @@
     </div>
 </section>
 
+<section class="lineup">
+    <h3>Line Up</h3>
+
+    <p class="dia">Viernes 21</p>
+    <div class="escenarios-contenedor contenedor">
+        <div class="escenario rock bg-amarillo">
+            <p class="nombre-escenario">Escenario Rock</p>
+            <ul class="calendario">
+                <li>
+                    24:00 | <span>Cigarrets After Sex</span>
+                </li>
+                <li>
+                    22:00 | <span>Queen</span>
+                </li>
+                <li>
+                    20:00 | <span>Mecano</span>
+                </li>
+                <li>
+                    19:00 | <span>LODVG</span>
+                </li>
+                <li>
+                    18:00 | <span>Moenia</span>
+                </li>
+                <li>
+                    17:00 | <span>Wallows</span>
+                </li>
+            </ul>
+        </div> <!--.escenario--> 
+
+        <div class="escenario edm bg-verde">
+            <p class="nombre-escenario">Escenario EDM</p>
+            <ul class="calendario">
+                <li>
+                    24:00 | <span>Melanie C</span>
+                </li>
+                <li>
+                    22:00 | <span>Natalia Lafourcade</span>
+                </li>
+                <li>
+                    20:00 | <span>Anri</span>
+                </li>
+                <li>
+                    19:00 | <span>Lizzo</span>
+                </li>
+                <li>
+                    18:00 | <span>Dayglow</span>
+                </li>
+                <li>
+                    17:00 | <span>Luis Miguel</span>
+                </li>
+            </ul>
+        </div> <!--.escenario--> 
+    </div><!--.escenarios-contenedor-->
+
+    <p class="dia">Sábado 22</p>
+    <div class="escenarios-contenedor contenedor">
+        <div class="escenario rock bg-verde">
+            <p class="nombre-escenario">Escenario Rock</p>
+            <ul class="calendario">
+                <li>
+                    24:00 | <span>The Real Tuesday Weld</span>
+                </li>
+                <li>
+                    22:00 | <span>Jotdog</span>
+                </li>
+                <li>
+                    20:00 | <span>Coldplay</span>
+                </li>
+                <li>
+                    19:00 | <span>Maria Daniela Y Su Sonido Lasser</span>
+                </li>
+                <li>
+                    18:00 | <span>Calle 13</span>
+                </li>
+                <li>
+                    17:00 | <span>Studio Killers</span>
+                </li>
+            </ul>
+        </div> <!--.escenario--> 
+
+        <div class="escenario edm bg-amarillo">
+            <p class="nombre-escenario">Escenario EDM</p>
+            <ul class="calendario">
+                <li>
+                    24:00 | <span>Freddie Mercury</span>
+                </li>
+                <li>
+                    22:00 | <span>Shakira</span>
+                </li>
+                <li>
+                    20:00 | <span>Aqua</span>
+                </li>
+                <li>
+                    19:00 | <span>Britney Spears</span>
+                </li>
+                <li>
+                    18:00 | <span>Lady Gaga</span>
+                </li>
+                <li>
+                    17:00 | <span>Mariya Takeuchi</span>
+                </li>
+            </ul>
+        </div> <!--.escenario--> 
+    </div><!--.escenarios-contenedor-->
+
+</section>
+
+<section class="galeria contenedor">
+    <h3>Galería</h3>
+    <ul class="galeria-imagenes"></ul>
+</section>
+<script src="build/js/app.js"></script>
 </body>
 </html>
